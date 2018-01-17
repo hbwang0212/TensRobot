@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<tensegrity version="1.0">
+ <universe gravity_strength="0" charge_active="true">
+  <nodes>
+   <class green="0.65" blue="0.172">
+    <type radius="21650" fixed="true">
+     <node> <!-- 0 -->
+      <position x="0" y="100000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="21650">
+     <node> <!-- 1 -->
+      <position x="0" y="50000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     
+     
+    </type>
+   </class>
+  </nodes>
+  <links>
+   <class red="0.831" blue="0.6">
+    <type length="600000" radius="708" elasticity="143" damping="100" compression="false">
+     <link nodes="0 1"/>
+    </type>
+   </class>
+  </links>
+ </universe>
+</tensegrity>

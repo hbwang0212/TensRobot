@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<tensegrity version="1.0">
+ <universe gravity_strength="0" charge_active="true">
+  <nodes>
+   <class green="0.65" blue="0.172">
+    <type radius="2165" fixed="false">
+     <node> <!-- 0 -->
+      <position x="-50000" y="0" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="2165">
+     <node> <!-- 1 -->
+      <position x="-50000" y="50000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 2 -->
+      <position x="0" y="50000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 3 -->
+      <position x="50000" y="50000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 4 -->
+      <position x="50000" y="0" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 5 -->
+      <position x="0" y="25000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 6 -->
+      <position x="0" y="0" z="25000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     
+     
+    </type>
+   </class>
+  </nodes>
+  <links>
+   <class red="0.831" blue="0.6">
+    <type length="50000" radius="1708" elasticity="0" damping="100" compression="false">
+     <link nodes="0 1"/>
+     <link nodes="1 2"/>
+     <link nodes="2 3"/>
+     <link nodes="3 4"/>
+     <link nodes="2 6"/>
+    </type>
+   </class>
+   <class red="0.1" blue="0.9">
+    <type length="25000" radius="708" elasticity="100" damping="100" compression="false">
+     <link nodes="5 2"/>
+    </type>
+   </class>
+  </links>
+ </universe>
+</tensegrity>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<tensegrity version="1.0">
+ <universe gravity_strength="0" charge_active="true">
+  <nodes>
+   <class green="0.65" blue="0.172">
+    <type radius="216" fixed="false">
+     <node> <!-- 0 -->
+      <position x="0" y="50000" z="25000"/>
+      <velocity x="10000" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="216">
+     <node> <!-- 1 -->
+      <position x="100000" y="50000" z="25000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 2 -->
+      <position x="0" y="50000" z="75000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 3 -->
+      <position x="100000" y="50000" z="75000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 4 -->
+      <position x="25000" y="0" z="50000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 5 -->
+      <position x="25000" y="100000" z="50000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 6 -->
+      <position x="75000" y="0" z="60000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="4165" fixed="false">
+      
+     <node> <!-- 7 -->
+      <position x="75000" y="100000" z="50000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="216" fixed="false">
+     <node> <!-- 8 -->
+      <position x="50000" y="25000" z="0"/>
+      <velocity z="0"/>
+     </node>
+
+    
+
+     <node> <!-- 9 -->
+      <position x="50000" y="25000" z="100000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+     <node> <!-- 10 -->
+      <position x="50000" y="75000" z="0"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+    </type>
+    <type radius="1165" fixed="false">
+     <node> <!-- 11 -->
+      <position x="50000" y="75000" z="100000"/>
+      <velocity x="0" y="0" z="0"/>
+     </node>
+
+     
+    </type>
+   </class>
+  </nodes>
+  <links>
+   <class red="0.831" blue="0.6">
+    <type length="60000" radius="708" elasticity="143" damping="100" compression="false">
+    <link nodes="0 4"/>
+     <link nodes="0 5"/>
+     <link nodes="0 8"/>
+     <link nodes="0 10"/>
+     <link nodes="1 6"/>
+     <link nodes="1 7"/>
+     <link nodes="1 8"/>
+     <link nodes="1 10"/>
+     <link nodes="2 4"/>
+     <link nodes="2 5"/>
+     <link nodes="2 9"/>
+     <link nodes="2 11"/>
+     <link nodes="3 6"/>
+     <link nodes="3 7"/>
+     <link nodes="3 9"/>
+     <link nodes="3 11"/>
+     <link nodes="4 8"/>
+     <link nodes="4 9"/>
+     <link nodes="5 10"/>
+     <link nodes="5 11"/>
+     <link nodes="6 8"/>
+     <link nodes="6 9"/>
+     <link nodes="7 10"/>
+    </type>
+   </class>
+   <class green="0.831" blue="0.6">
+   <type length="60000" radius="7080" elasticity="143" damping="100" compression="false">
+     <link nodes="7 11"/>
+   	</type>
+   </class>
+   <class>
+    <type length="100000" radius="4468" elasticity="215" damping="100">
+     <link nodes="0 1"/>
+     <link nodes="2 3"/>
+     <link nodes="4 5"/>
+     <link nodes="6 7"/>
+     <link nodes="8 9"/>
+     <link nodes="10 11"/>
+    </type>
+   </class>
+  </links>
+ </universe>
+</tensegrity>
